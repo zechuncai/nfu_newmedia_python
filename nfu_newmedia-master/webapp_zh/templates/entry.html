@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<th colspan="2">在此窗体输入您和他（她）的生肖吧：</th>
+<tr><td>性别: </td><td><input type="TEXT" name="gender" value="请填入您的性别" /></td></tr>
+<tr><td>生肖: </td><td><input type="TEXT" name="Chinese zodiac" width="2" value="请填入您的生肖" /></td></tr>
+<tr><td>性别: </td><td><input type="TEXT" name="gender" value="请填入您的性别" /></td></tr>
+<tr><td>生肖: </td><td><input type="TEXT" name="Chinese zodiac" width="2" value="请填入您的生肖" /></td></tr>
+<tr><td>顏色（color）: </td><td><input type="color" name="user_color" /></td></tr>
+</table>
+<p>填好资料, 单击此按钮开始匹配：</p>
+<p><input value='开始匹配吧！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
