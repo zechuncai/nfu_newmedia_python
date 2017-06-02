@@ -16,7 +16,7 @@ def do_search() -> 'html':
     """Extract the posted data; perform the search; return results."""
     phrase = request.form['phrase']
     letters = request.form['letters']
-    	#从entry.html模版（输入）取到变数名称user_color的值，存放在color这变数下
+    #从entry.html模版（输入）取到变数名称user_color的值，存放在color这变数下
     title = '以下是您的和他（她）的匹配程度：'
     results = search4letters(phrase, letters)
     log_request(request, results)
