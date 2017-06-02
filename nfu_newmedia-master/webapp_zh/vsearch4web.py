@@ -17,7 +17,7 @@ def do_search() -> 'html':
     phrase = request.form['phrase']
     letters = request.form['letters']
     #从entry.html模版（输入）取到变数名称user_color的值，存放在color这变数下
-    title = '以下是您的和他（她）的匹配程度：'
+    title = '以下是您和他（她）的匹配程度：'
     results = search4letters(phrase, letters)
     log_request(request, results)
     return render_template('results.html',
@@ -45,9 +45,9 @@ def view_the_log() -> 'html':
             contents.append([])
             for item in line.split('|'):
                 contents[-1].append(escape(item))
-    titles = ('表单内容', '访问者IP', '浏览器', '运行结果')
+    titles = ('匹配程度')
     return render_template('viewlog.html',
-                           the_title='查看日志',
+                           the_title='',
                            the_row_titles=titles,
                            the_data=contents,)
 
