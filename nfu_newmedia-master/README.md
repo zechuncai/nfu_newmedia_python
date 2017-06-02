@@ -22,7 +22,7 @@ pick_a_color_4web
 * [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
 ### API
 * [github](https://api.github.com/)
-http://api.avatardata.cn/ShengXiaoPeiDui/Lookup
+* [生肖配对](http://api.avatardata.cn/ShengXiaoPeiDui/Lookup)
 ## 作者成员：
 见[_team_.tsv](_team_.tsv)
 
