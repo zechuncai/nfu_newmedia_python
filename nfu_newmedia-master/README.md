@@ -12,10 +12,10 @@ pick_a_color_4web
 变数一：性别
 变数二：生肖
 ## 输出：
-用户得到输出结果为：
+用户得到的匹配结果为：
 ## 从输入到输出，本组作品使用了：
 ### 模块
-*[json]
+* [json]（http://www.json.org/）
 * [folium](https://github.com/python-visualization/folium)
 * [opencv](http://opencv.org/)
 ### 数据
