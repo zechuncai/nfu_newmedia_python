@@ -1,4 +1,4 @@
-pick_a_color_4web
+Zodiac Match House
 
 
 		英文项目名称，必需取名合理，是目录名亦是.py後端程序（此行完成後应删）
@@ -6,7 +6,6 @@ pick_a_color_4web
 生肖配对，操练Python语言开发练习：使用flask
 
 
-		中文简介项目内容（此行完成後应删）
 
 ## 输入：
 变数一：性别
@@ -27,4 +26,3 @@ pick_a_color_4web
 见[_team_.tsv](_team_.tsv)
 
 
-		成员列表，统计用，一人一行，输入Github 帐户名即可（此行完成後应删）
