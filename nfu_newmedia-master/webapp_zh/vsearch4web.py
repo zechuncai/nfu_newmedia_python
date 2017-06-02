@@ -24,8 +24,7 @@ def do_search() -> 'html':
                            the_title=title,
                            the_phrase=phrase,
                            the_letters=letters,
-                           the_results=results,
-                          	#flask.render_template 函数把results.html模版（输出），其中模版中the_color的值，用color这变数之值
+                           the_results=results, #flask.render_template 函数把results.html模版（输出），其中模版中the_color的值，用color这变数之值
                            )
 
 
