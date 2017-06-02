@@ -16,15 +16,16 @@ def do_search() -> 'html':
     """Extract the posted data; perform the search; return results."""
     phrase = request.form['phrase']
     letters = request.form['letters']
-    #从entry.html模版（输入）取到变数名称user_color的值，存放在color这变数下
-    title = '以下是您和他（她）的匹配程度：'
+    color = request.form['user_color']	#从entry.html模版（输入）取到变数名称user_color的值，存放在color这变数下
+    title = '以下是您的和他（她）的匹配程度：'
     results = search4letters(phrase, letters)
     log_request(request, results)
     return render_template('results.html',
                            the_title=title,
                            the_phrase=phrase,
                            the_letters=letters,
-                           the_results=results, #flask.render_template 函数把results.html模版（输出），其中模版中the_color的值，用color这变数之值
+                           the_results=results,
+                           the_color=color,		#flask.render_template 函数把results.html模版（输出），其中模版中the_color的值，用color这变数之值
                            )
 
 
@@ -33,7 +34,7 @@ def do_search() -> 'html':
 def entry_page() -> 'html':
     """Display this webapp's HTML form."""
     return render_template('entry.html',
-                           the_title='欢迎来到一C组生肖大匹配！')
+                           the_title='欢迎来到一C组匹配屋！')
 
 
 @app.route('/viewlog')
@@ -45,9 +46,9 @@ def view_the_log() -> 'html':
             contents.append([])
             for item in line.split('|'):
                 contents[-1].append(escape(item))
-    titles = ('匹配程度')
+    titles = ('表单内容', '访问者IP', '浏览器', '运行结果')
     return render_template('viewlog.html',
-                           the_title='',
+                           the_title='查看日志',
                            the_row_titles=titles,
                            the_data=contents,)
 
