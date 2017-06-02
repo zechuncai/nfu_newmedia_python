@@ -16,7 +16,7 @@ def do_search() -> 'html':
     """Extract the posted data; perform the search; return results."""
     phrase = request.form['phrase']
     letters = request.form['letters']
-    color = request.form['user_color']	#从entry.html模版（输入）取到变数名称user_color的值，存放在color这变数下
+    	#从entry.html模版（输入）取到变数名称user_color的值，存放在color这变数下
     title = '以下是您的和他（她）的匹配程度：'
     results = search4letters(phrase, letters)
     log_request(request, results)
@@ -25,7 +25,7 @@ def do_search() -> 'html':
                            the_phrase=phrase,
                            the_letters=letters,
                            the_results=results,
-                           the_color=color,		#flask.render_template 函数把results.html模版（输出），其中模版中the_color的值，用color这变数之值
+                          	the_color=color,	#flask.render_template 函数把results.html模版（输出），其中模版中the_color的值，用color这变数之值
                            )
 
 
