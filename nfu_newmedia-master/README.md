@@ -15,7 +15,7 @@ pick_a_color_4web
 用户得到的匹配结果为：
 ## 从输入到输出，本组作品使用了：
 ### 模块
-* [json]（http://www.json.org/）
+* [json](https://github.com/tobscure/json-api)
 * [folium](https://github.com/python-visualization/folium)
 * [opencv](http://opencv.org/)
 ### 数据
