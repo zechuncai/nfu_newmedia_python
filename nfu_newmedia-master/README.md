@@ -1,30 +1,19 @@
-pick_a_color_4web
+# @中山大学南方学院 2016 - 2017 文学与传媒系【Python】
+
+# 簡介 
+....
+## webapp_zh
+
+### vsearch.py
+
+找介詞
+
+### vsearch4web.py
+
+找介詞app
+
+Note: 來源
+
+## webapp_zh\templates
 
 
-		英文项目名称，必需取名合理，是目录名亦是.py後端程序（此行完成後应删）
-# 简介 
-选取的颜色，操练Python语言开发练习：使用flask
-
-
-		中文简介项目内容（此行完成後应删）
-
-## 输入：身高(height)体重(weight)
-用户输入变数1（型态1）丶变数2（型态2）丶
-## 输出：身体健康指数
-用户得到输出结果为：
-## 从输入到输出，本组作品使用了：
-### 模块
-* [folium](https://github.com/python-visualization/folium)
-* [opencv](http://opencv.org/)
-### 数据
-* [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
-### API
-* [github](https://api.github.com/)
-
-## 作者成员：
-见[_team_.tsv](_team_/_team_.tsv)
-zechuncai
-
-
-
-		成员列表，统计用，一人一行，输入Github 帐户名即可（此行完成後应删）
