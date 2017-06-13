@@ -9,20 +9,15 @@ def log_request(req: 'flask_request', res: str) -> None:
     with open('vsearch.log', 'a') as log:
         print(req.form, req.remote_addr, req.user_agent, res, file=log, sep='|')
 
-
-@app.route('/search4', methods=['POST'])
-def do_search() -> 'html':
-    """Extract the posted data; perform the search; return results."""
-    phrase = request.form['phrase']
-    letters = request.form['letters']
-    title = '以下是您的结果：'
-    results = str(search4letters(phrase, letters))
-    log_request(request, results)
+@app.route('/results', methods=['POST'])
+def BMI() -> 'html':
+    height = request.form['height']
+    weight = request.form['weight']
+    
     return render_template('results.html',
-                           the_title=title,
-                           the_phrase=phrase,
-                           the_letters=letters,
-                           the_results=results,)
+                           the_height=height,
+                           the_weight=weight,
+                           )
 
 
 @app.route('/')
