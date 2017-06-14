@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 @app.route('/search4', methods=['POST'])
 def show_search4() -> 'html':
-    shengxiao = request.form['shengxiao']
+    shengxiao1 = request.form['shengxiao1']
+    shengxiao2 = request.form['shengxiao2']
     results = get_shengxiao(shengxiao)
     return render_template('C_results.html',
                            the_results=results,
