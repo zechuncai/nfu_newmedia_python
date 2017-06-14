@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import urllib.request, json
 
-def get_shengxiao(shengxiao_name):
+def get_shengxiao(shengxiao_code):
     print ('''
 
     ************************************************
@@ -13,10 +13,10 @@ def get_shengxiao(shengxiao_name):
         with open('shengxiao.txt', 'r', encoding='utf-8') as f:
             lines = f.readlines()
             for line in lines:
-                if shengxiao_name in line:
-                    shengxiao_code = line.split('=')[0].strip()
+                if shengxiao_code in line:
+                    shengxiao_name = line.split('=')[1].strip()
         #生肖配对api            
-        url = ('http://api.avatardata.cn/ShengXiaoPeiDui/Lookup?shengxiao=CN{code}&key=b27767d0aecb4ed7b70333b213a24464&shengxiao1=CN{code}&shengxiao2=CN{code}'.format(code=shengxiao_code))
+        url = ('http://api.avatardata.cn/ShengXiaoPeiDui/Lookup?key=b27767d0aecb4ed7b70333b213a24464&shengxiao1={name}&shengxiao2={name}'.format(name=shengxiao_name))
 
         response = urllib.request.urlopen(url)
         weather_html = response.read()
