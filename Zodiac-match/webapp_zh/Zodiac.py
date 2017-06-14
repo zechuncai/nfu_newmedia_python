@@ -2,13 +2,6 @@
 import urllib.request, json
 
 def get_shengxiao(shengxiao_code):
-    print ('''
-
-    ************************************************
-
-         Welcome to Zodiac-match House by 一C!       
-
-    ************************************************''')
     try:
         with open('shengxiao.txt', 'r', encoding='utf-8') as f:
             lines = f.readlines()
@@ -19,8 +12,8 @@ def get_shengxiao(shengxiao_code):
         url = ('http://api.avatardata.cn/ShengXiaoPeiDui/Lookup?key=b27767d0aecb4ed7b70333b213a24464&shengxiao1={name}&shengxiao2={name}'.format(name=shengxiao_name))
 
         response = urllib.request.urlopen(url)
-        weather_html = response.read()
-        json_data = json.loads(weather_html)
+        shengxiao_html = response.read()
+        json_data = json.loads(shengxiao_html)
         
         data = json_data['Avatardata'][0]
         '''
