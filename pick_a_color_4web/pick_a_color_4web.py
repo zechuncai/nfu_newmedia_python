@@ -2,7 +2,12 @@
 from flask import Flask, render_template, request, escape
 
 app = Flask(__name__)
-
+@app.route('/')
+@app.route('/entry')
+def entry_page() -> 'html':
+    """Display this webapp's HTML form."""
+    return render_template('entry.html',
+                           the_title='欢迎来到网上选色！')
 @app.route('/')
 @app.route('/entry')
 def entry_page() -> 'html':
