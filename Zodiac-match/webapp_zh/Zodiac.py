@@ -51,7 +51,7 @@ def get_shengxiao(shengxiao_name):
         
         
         
-        return [shengxiao,shengxiao1,shengxiao2,title,content1,content2,error_code,reason,]
+        return [shengxiao,shengxiao1,shengxiao2,title,content1,content2,error_code,reason]
 
 
     except NameError :

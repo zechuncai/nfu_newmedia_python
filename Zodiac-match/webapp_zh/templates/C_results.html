@@ -6,22 +6,39 @@
 
 <p align="center">以下是您输入的信息：</p>
 <table align="center" border="1px" cellspacing="0px" bordercolor="white">
-<<<<<<< HEAD
-=======
-<tr><td>性别1：</td><td>{{ sex1 }}</td></tr>
-<tr><td>性别2：</td><td>{{ sex2 }}</td></tr>
-<tr><td>生肖1：</td><td>{{ shengxiao1 }}</td></tr>
-<tr><td>生肖2：</td><td>{{ shengxiao2 }}</td></tr>
->>>>>>> e7e4d0fdd0da9a4e86c8d37c3553f8c4e8b79f16
+
+<tr><td>性别1：</td> <td>{{ sex1 }}</td></tr>
+<tr><td>性别2：</td> <td>{{ sex2 }}</td></tr>
+<tr><td>生肖1：</td> <td>{{ the_shengxiao1 }}</td></tr>
+<tr><td>生肖2：</td> <td>{{ the_shengxiao2 }}</td></tr>
 
 </table>
-
-<p>以下是您的匹配结果：</p>
+<br><br><br>
+<p align="center">以下是您的匹配结果：</p>
+<br>
 <table align="center" border="1px" cellspacing="0px" bordercolor="white">
-
 <tr>
-    <td>匹配结果：</td><td>{{ match_result }}</td>
+	<td>性别1：{{the_sex1}}</td> <td>性别2：{{the_sex2}} </td>
 </tr>
+<tr>
+	<td>生肖1：{{the_shengxiao1}}</td> <td>生肖2：{{the_shengxiao2}} </td>
+</tr>
+<tr>
+	<td colspan=2  align="left">匹配生肖：{{the_title}} </td> 
+</tr>
+<tr>
+	<td colspan=2  align="left">结果1：{{the_content1}}</td> 
+</tr>
+<tr>
+	<td colspan=2  align="left">结果2：{{the_content2}}</td> 
+</tr>
+<tr>
+	<td colspan=2  align="left">error_code：{{error_code}}</td> 
+</tr>
+<tr>
+	<td colspan=2  align="left">原因：{{the_reason}}</td> 
+</tr>
+
 </table>
 
 {% endblock %}
