@@ -1,0 +1,50 @@
+{% extends 'C_base.html' %}
+
+{% block body %}
+<br><br><br><br><br><br><br>
+<h2 align="center">{{ the_title }}</h2>
+<br>
+<form method='POST' action='/search4' align="center">
+<table align="center">
+<colspan="2">请输入您和他（她）的信息: 
+<br><br><br>
+<tr>性别1:  男<input  type="radio" name="sex1" /> 女<input  type="radio" name="sex1" /></tr>
+&nbsp
+<tr>生肖1: <select name="shengxiao1">
+            <option value ="00"> 鼠 </option>
+            <option value ="01"> 牛 </option>
+            <option value ="02"> 虎 </option>
+            <option value ="03"> 兔 </option>
+            <option value ="04"> 龙 </option>
+            <option value ="05"> 蛇 </option>
+            <option value ="06"> 马 </option>
+            <option value ="07"> 羊 </option>
+            <option value ="08"> 猴 </option>
+            <option value ="09"> 鸡 </option>
+            <option value ="10"> 狗 </option>
+            <option value ="11"> 猪 </option>
+</tr>
+<br><br>
+<tr>性别2:  男<input  type="radio" name="sex2" /> 女<input  type="radio" name="sex2" /></tr>
+&nbsp
+<tr>生肖2: <select name="shengxiao2" >
+            <option value ="00"> 鼠 </option>
+            <option value ="01"> 牛 </option>
+            <option value ="02"> 虎 </option>
+            <option value ="03"> 兔 </option>
+            <option value ="04"> 龙 </option>
+            <option value ="05"> 蛇 </option>
+            <option value ="06"> 马 </option>
+            <option value ="07"> 羊 </option>
+            <option value ="08"> 猴 </option>
+            <option value ="09"> 鸡 </option>
+            <option value ="10"> 狗 </option>
+            <option value ="11"> 猪 </option>
+</tr>
+<br><br>
+</table>
+<p>填好资料, 单击此按钮开始匹配：</p>
+<p><input value='开始匹配吧！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

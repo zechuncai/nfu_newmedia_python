@@ -53,3 +53,5 @@ __pycache__
 # Files
 *.log created by Python runtime
 
+Zodiac-match/webapp_zh/static/hf.css
+Zodiac-match/webapp_zh/vsearch4web.py
