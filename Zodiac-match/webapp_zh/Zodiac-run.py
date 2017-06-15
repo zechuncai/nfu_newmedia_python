@@ -18,8 +18,7 @@ def do_search() -> 'html':
                            the_title = results[3],
                            the_content1 = results[4],
                            the_content2 = results[5],
-                           the_error_code = results[6],
-                           the_reason = results[7])
+                           the_reason = results[6])
 
 
 
