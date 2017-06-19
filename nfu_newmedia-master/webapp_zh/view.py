@@ -1,5 +1,5 @@
 from flask import render_template,request
-from app import app
+from webapp_zh import webapp_zh
 import re
 
 @app.route('/')
