@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<br><br><br><br><br><br><br>
+<h2 align="center">{{ the_title }}</h2>
+<br>
+<form method='POST' action='/results'>
+
+weight:<input type="text" name="weight"><br>
+height:<input type="text" name="height"><br>
+
+    
+gender<select name="gender">
+<option value="boy">boy</option>
+<option value="girl">girl</option><br>
+   
+</select><br>
+<br>
+<input type="submit" value="Submit">
+</form>
+
+{% endblock %}
+
