@@ -1,15 +1,25 @@
  # -*- coding: utf-8 -*- 
 from flask import Flask, render_template, request
-from Zodiac import get_shengxiao
+import requests
 
 app = Flask(__name__)
 
 
 @app.route('/search4', methods=['POST'])
 def do_search() -> 'html':
-    shengxiao1 = request.form['shengxiao1']
-    shengxiao2 = request.form['shengxiao2']
-    results = get_shengxiao(shengxiao)
+    shengxiao_1 = request.form['shengxiao1']
+    shengxiao_2 = request.form['shengxiao2']
+    url = 'http://api.avatardata.cn/ShengXiaoPeiDui/Lookup?'
+    url_2='key=b27767d0aecb4ed7b70333b213a24464&shengxiao1='+shengxiao_1+'&shengxiao2='+shengxiao_2
+    url_3= url+url_2
+    r=requests.get(url_3)
+    gg=r.text
+    gga=eval(gg)
+    results=gga[ "result"]["shengxiao1"]
+    results[2]=gga[ "result"]["shengxiao2"]
+    results[4]=gga[ "result"]["content1"]
+    results[5]=gga[ "result"]["content2"]
+    results[3]=gga[ "result"]["title"]
     return render_template('C_results.html',
                            the_results=results,
                            the_shengxiao = shengxiao,
