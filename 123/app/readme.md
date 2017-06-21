@@ -17,14 +17,18 @@ BMI
 从输入到输出，除了flask模块，本组作品还使用了：
 
 模块
+
 render_template,request
+
 
 数据
 
 本组并未使用数据。
+
 API
 
 本组并未执行其他数据清理工作。
+
 Web App动作描述
 
 以下按web 请求（web request） - web 响应 时序说明
