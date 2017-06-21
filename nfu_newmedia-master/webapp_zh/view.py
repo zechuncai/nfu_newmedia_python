@@ -1,4 +1,4 @@
-from flask import render_template,request
+了from flask import render_template,request
 from app import app
 import re
 
@@ -25,7 +25,7 @@ def BMI() -> 'html':
             result.append("你的体重过轻")
         else:result.append("恭喜你你的BMI指数在正常范围，保持好你的体重吧！")    
     elif 24 < bmi <27:
-        result.append("你的BMI指数告诉你你可算是过重了哦")
+        result.append("你的BMI指数告诉你你可算是过重了哦，要注意了！")
     elif 27 < bmi <32:
         result.append("你现在是属于肥胖了，不是“微胖”哦")
         
