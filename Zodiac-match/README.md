@@ -1,7 +1,7 @@
 Zodiac Match House
 
 
-		英文项目名称，必需取名合理，是目录名亦是.py後端程序（此行完成後应删）
+		
 # 简介 
 生肖配对，操练Python语言开发练习：使用flask
 
@@ -11,7 +11,7 @@ Zodiac Match House
 变数一：性别
 变数二：生肖
 ## 输出：
-用户得到的匹配结果为：
+用户得到的匹配结果为：生肖配对
 ## 从输入到输出，本组作品使用了：
 ### 模块
 * [json](https://github.com/tobscure/json-api)
