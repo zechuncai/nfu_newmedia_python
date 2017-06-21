@@ -22,7 +22,7 @@ def BMI() -> 'html':
     result = []
     if bmi <24:
         if bmi <18.5:
-            result.append("你的体重过轻")
+            result.append("你的体重过轻！")
         else:result.append("恭喜你你的BMI指数在正常范围，保持好你的体重吧！")    
     elif 24 < bmi <27:
         result.append("你的BMI指数告诉你你可算是过重了哦，要注意了！")
