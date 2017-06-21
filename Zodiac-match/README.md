@@ -1,33 +1,33 @@
   
 
-ChanJuanLaiZodiac Match House
+Zodiac Match House
 
 
 		
 # 简介 
-生肖配对，操练Python语言开发练习：使用flask
+操练Python语言开发练习：
+生肖配对，了解两个测试者的生肖是否配对及其评价
 
 
 
 ## 输入：
-变数：生肖
+用户输入两个匹配者匹配者的生肖
 
 ## 输出：
-用户得到的匹配结果为：生肖配对结果
+用户得到的匹配结果为：两个测试者的生肖配对结果
 
 ## 从输入到输出，本组作品使用了：
 ### 模块
-* [json](https://github.com/tobscure/json-api)
+* [json](http://www.json.org/)
 * [requests](http://php.net/manual/en/reserved.variables.request.php)
-* [urllib](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432688314740a0aed473a39f47b09c8c7274c9ab6aee000/)
-* [Flask](http://docs.jinkan.org/docs/flask/)
+* [urllib](http://www.cnblogs.com/sysu-blackbear/p/3629420.html)
+* [flask](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386832805619b3e68a9cf16c4d0398d8af8f6d50e740000)
 ### 数据
-* [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
+* [生肖]
 ### API
-* [github](https://api.github.com/)
-* [生肖配对](http://api.avatardata.cn/ShengXiaoPeiDui/Lookup)
+* [生肖配对](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)
 ## 作者成员：
-见[_team_.tsv](_team_.tsv)
+见[_team_.tsv](webapp_zh/_team_/_team_.tsv)
 
 
 
