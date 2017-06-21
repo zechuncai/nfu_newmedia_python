@@ -19,11 +19,11 @@ def do_search() -> 'html':
     results_002=gga[ "result"]["shengxiao2"]
     results_003=gga[ "result"]["content1"]
     results_004=gga[ "result"]["content2"]
-    results_005=gga[ "result"]["title"]
+
     return render_template('C_results.html',
                            the_shengxiao1 = results_001,
                            the_shengxiao2 = results_002,
-                           the_title = results_005,
+                           the_title = '欢迎来到一C组生肖匹配屋！',
                            the_content1 = results_003,
                            the_content2 = results_004,
                            )
