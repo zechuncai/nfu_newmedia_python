@@ -1,4 +1,6 @@
-Zodiac Match House
+
+
+ChanJuanLaiZodiac Match House
 
 
 		
@@ -24,5 +26,11 @@ Zodiac Match House
 * [生肖配对](http://api.avatardata.cn/ShengXiaoPeiDui/Lookup)
 ## 作者成员：
 见[_team_.tsv](_team_.tsv)
+Gwenshiga	
+CherryLichan	
+HuangJiaLi	
+q3466141541	
+JiawenLai	
+ChanJuanLai
 
 
