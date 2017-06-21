@@ -27,7 +27,7 @@
 ### API
 * [生肖配对](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)
 ## 作者成员：
-见[_team_.tsv](_team_.tsv)
+见[_team_.tsv](_team_/_team_.tsv)
 
 
 
