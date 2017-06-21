@@ -15,25 +15,22 @@ def do_search() -> 'html':
     r=requests.get(url_3)
     gg=r.text
     gga=eval(gg)
-    results=gga[ "result"]["shengxiao1"]
-    results[2]=gga[ "result"]["shengxiao2"]
-    results[4]=gga[ "result"]["content1"]
-    results[5]=gga[ "result"]["content2"]
-    results[3]=gga[ "result"]["title"]
+    results_001=gga[ "result"]["shengxiao1"]
+    results_002=gga[ "result"]["shengxiao2"]
+    results_003=gga[ "result"]["content1"]
+    results_004=gga[ "result"]["content2"]
+    results_005=gga[ "result"]["title"]
     return render_template('C_results.html',
-                           the_results=results,
-                           the_shengxiao = shengxiao,
-                           the_shengxiao1 = results[1],
-                           the_shengxiao2 = results[2],
-                           the_title = results[3],
-                           the_content1 = results[4],
-                           the_content2 = results[5],
-                           the_reason = results[6])
-
+                           the_shengxiao1 = results_001,
+                           the_shengxiao2 = results_002,
+                           the_title = results_005,
+                           the_content1 = results_003,
+                           the_content2 = results_004,
+                           )
 
 
 @app.route('/')
-@app.route('/C_entry')
+@app.route('/entry')
 def entry_page() -> 'html':
     """Display this webapp's HTML form."""
     return render_template('C_entry.html',
