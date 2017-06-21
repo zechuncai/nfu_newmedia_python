@@ -10,15 +10,17 @@ ChanJuanLaiZodiac Match House
 
 
 ## 输入：
-变数一：性别
-变数二：生肖
+变数：生肖
+
 ## 输出：
-用户得到的匹配结果为：生肖配对
+用户得到的匹配结果为：生肖配对结果
+
 ## 从输入到输出，本组作品使用了：
 ### 模块
 * [json](https://github.com/tobscure/json-api)
-* [folium](https://github.com/python-visualization/folium)
-* [opencv](http://opencv.org/)
+* [requests](http://php.net/manual/en/reserved.variables.request.php)
+* [urllib](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432688314740a0aed473a39f47b09c8c7274c9ab6aee000/)
+
 ### 数据
 * [简中CLDR localenames](https://github.com/unicode-cldr/cldr-localenames-modern/blob/master/main/zh-Hans/territories.json)
 ### API
