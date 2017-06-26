@@ -53,9 +53,7 @@ __pycache__
 # Files
 *.log created by Python runtime
 
-# data files for 一C
-Zodiac-match/static/hf.css
-Zodiac-match/Zodiac-run.py
+
 # data files for 二F 
 province/data/*.tsv
 province/__note__/
