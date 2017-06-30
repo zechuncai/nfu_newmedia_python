@@ -3,7 +3,7 @@
 -------------------
 
 		
-## 简介 
+## 简介： 
 > **通过生肖匹配平台，帮助用户查询匹配信息。**</br>
 > **输入方面用户可输入想查询生肖（如“虎”和“牛”），输出方面则是查询的两个测试者的生肖是否配对及其评价信息，分别输出生肖男生肖女的交叉匹配资料，共144种匹配资料。**</br>
 > **数据来源为[DT阿凡达数据](http://api.avatardata.cn/ShengXiaoPeiDui/Lookup?key=b27767d0aecb4ed7b70333b213a24464&shengxiao1={name}&shengxiao2={name})取得的的api数据库和手动添加的生肖类型的tsv档。**</br>
@@ -65,14 +65,14 @@
 
 
 ### 作者成员：
-见[_team_.tsv](webapp_zh/_team_/_team_.tsv)
+> **见[_team_.tsv](webapp_zh/_team_/_team_.tsv)
 
-Gwenshiga</br>
-CherryLichan</br>
-HuangJiaLi</br>
-q3466141541</br>
-JiawenLai</br>
-ChanJuanLai</br>
+> -Gwenshiga</br>
+> -CherryLichan</br>
+> -HuangJiaLi</br>
+> -q3466141541</br>
+> -JiawenLai</br>
+> -ChanJuanLai</br>
 
 
 
