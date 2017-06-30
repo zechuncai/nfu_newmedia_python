@@ -2,7 +2,13 @@
 from flask import Flask, render_template, request
 import requests
 
+import shengxiao
+
 app = Flask(__name__)
+
+r=shengxiao.shenxiao_from_to()
+r_list=[k for k in r.find_shenxiao.keys()]
+r_list_order={k:v for k ,v in r.find_shenxiao.items()}
 
 
 @app.route('/search4', methods=['POST'])
@@ -34,6 +40,7 @@ def do_search() -> 'html':
 def entry_page() -> 'html':
     """Display this webapp's HTML form."""
     return render_template('C_entry.html',
+							entry_shenxiao_list=r_list,
                            the_title='欢迎来到一C组生肖匹配屋！')
 
 
