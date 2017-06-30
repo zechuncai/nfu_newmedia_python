@@ -6,7 +6,7 @@
 ## 简介： 
 > **1. 通过生肖匹配平台，帮助用户查询匹配信息。**</br>
 > **2. 输入方面用户可输入想查询生肖（如“虎”和“牛”），输出方面则是查询的两个测试者的生肖是否配对及其评价信息，分别输出生肖男生肖女的交叉匹配资料，共144种匹配资料。**</br>
-> **3. 数据来源为[DT阿凡达数据] (http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99) 取得的的api数据库和手动添加的生肖类型的tsv档。**</br>
+> **3. 数据来源为[DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99) 取得的的api数据库和手动添加的生肖类型的tsv档。**</br>
 > **4. 可供选择以下生肖：**</br>
 > - 鼠
 > - 牛
@@ -22,7 +22,7 @@
 > - 猪
 
 ### 输入：
-> **用户选择两个匹配者的生肖，交互界面使用到[HTML之select元素] (http://www.w3school.com.cn/tags/tag_select.asp) ，显示的是生肖，其对应值是生肖。所以代码文件可以找到所需要的生肖。**
+> **用户选择两个匹配者的生肖，交互界面使用到[HTML之select元素](http://www.w3school.com.cn/tags/tag_select.asp) ，显示的是生肖，其对应值是生肖。所以代码文件可以找到所需要的生肖。**
 
 #### 输出：
 > **1. 两个生肖的男女交叉匹配资料**</br>
@@ -34,13 +34,13 @@
 > **由于api无匹配者的生肖资料档，所以手动生成生肖类型的tsv档，在文件中读入，并做成字典读出相对应的内容**</br>
 
 ###### 模块
-> - [json] (http://www.json.org/json-zh.html)</br>
-> - [requests] (http://cn.python-requests.org/zh_CN/latest/)</br>
-> - [urllib] (https://baijiahao.baidu.com/po/feed/share?wfr=spider&for=pc&context=%7B"sourceFrom"%3A"bjh"%2C"nid"%3A"news_3437549851525350677"%7D)</br>
-> - [flask] (http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386832805619b3e68a9cf16c4d0398d8af8f6d50e740000)</br>
+> - [json](http://www.json.org/json-zh.html)</br>
+> - [requests](http://cn.python-requests.org/zh_CN/latest/)</br>
+> - [urllib](https://baijiahao.baidu.com/po/feed/share?wfr=spider&for=pc&context=%7B"sourceFrom"%3A"bjh"%2C"nid"%3A"news_3437549851525350677"%7D)</br>
+> - [flask](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386832805619b3e68a9cf16c4d0398d8af8f6d50e740000)</br>
 
 ###### API
-> - 来源： [DT阿凡达数据] (http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)
+> - 来源： [DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)
 
 
 #### Web APP动作描述：
