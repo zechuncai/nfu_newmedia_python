@@ -43,7 +43,7 @@
 > - 来源： [DT阿凡达数据](http://api.avatardata.cn/ShengXiaoPeiDui/Lookup?key=b27767d0aecb4ed7b70333b213a24464&shengxiao1={name}&shengxiao2={name})
 
 
-#### Web APP动作描述
+#### Web APP动作描述：
 
 > - 以下按web 请求（web request） - web 响应 时序说明
 
@@ -65,7 +65,7 @@
 
 
 ### 作者成员：
->  见[_team_.tsv](webapp_zh/_team_/_team_.tsv)
+> - 见[_team_.tsv](webapp_zh/_team_/_team_.tsv)
 
 > - Gwenshiga</br>
 > - CherryLichan</br>
