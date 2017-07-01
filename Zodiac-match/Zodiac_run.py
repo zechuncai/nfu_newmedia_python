@@ -15,8 +15,8 @@ r_list_order={k:v for k ,v in r.find_shenxiao.items()}
 def do_search() -> 'html':
     shengxiao_1 = request.form['shengxiao1']
     shengxiao_2 = request.form['shengxiao2']
-    url = 'http://api.avatardata.cn/ShengXiaoPeiDui/Lookup?'
-    url_2='key=b27767d0aecb4ed7b70333b213a24464&shengxiao1='+shengxiao_1+'&shengxiao2='+shengxiao_2
+    url = 'http://api.avatardata.cn/ShengXiaoPeiDui/Lookup?' #api接口
+    url_2='key=b27767d0aecb4ed7b70333b213a24464&shengxiao1='+shengxiao_1+'&shengxiao2='+shengxiao_2 #key秘钥
     url_3= url+url_2
     r=requests.get(url_3)
     gg=r.text
