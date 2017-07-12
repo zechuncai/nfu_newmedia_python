@@ -22,7 +22,9 @@
 > - 猪
 
 ### 输入：
-> **用户选择两个匹配者的生肖，交互界面使用到[HTML之select元素](http://www.w3school.com.cn/tags/tag_select.asp) ，显示的是生肖，其对应值是生肖。所以代码文件可以找到所需要的生肖。**
+> **用户选择两个匹配者的生肖，交互界面使用到[HTML之select 表单元素](http://www.w3school.com.cn/tags/tag_select.asp) ，显示的是生肖，其对应值是生肖。所以代码文件可以找到所需要的生肖。**
+> **详细见[templates/entry.html]
+(https://github.com/CherryLiChan/nfu_newmedia_python/blob/master/Zodiac-match/templates/C_entry.html)**</br>
 
 #### 输出：
 > **1. 两个生肖的男女交叉匹配资料**</br>
@@ -45,6 +47,14 @@
 
 #### Web APP动作描述：
 
+> - 以下是web请求前的准备工作
+
+> - 1. 在网页[DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)中，手动复制出所有的生肖匹配资料，保存成一个十二生肖的tsv档，保存到本地的data文件夹中。分别存在data文件夹中的[data/shengxiao_data.tsv](https://github.com/CherryLiChan/nfu_newmedia_python/blob/master/Zodiac-match/data/shengxiao_data.tsv)。
+
+> - 2. 在[shengxiao.py](https://github.com/CherryLiChan/nfu_newmedia_python/blob/master/Zodiac-match/shengxiao.py)定义两个类shengxiao1 ()和shengxiao2 (),读取[data/shengxiao_data.tsv](https://github.com/CherryLiChan/nfu_newmedia_python/blob/master/Zodiac-match/data/shengxiao_data.tsv)这个数据档，并分别把数据返回一个生肖匹配信息的字典，建立以中文名称的生肖为键，相对应的生肖匹配信息为值的字典self.find_shenxiao(见代码self.find_shenxiao = {d['shenxiao_from']:d['shenxiao_to'] for d in list_dict_shenxiao}
+
+> - 3. 在[shengxiao.py](https://github.com/CherryLiChan/nfu_newmedia_python/blob/master/Zodiac-match/shengxiao.py)中导入一个读取data文件夹中生肖类型的类[shengxiao_data.py](https://github.com/CherryLiChan/nfu_newmedia_python/tree/master/Zodiac-match/data)使用自定义函数读取生肖类型的字典(见代码shenxiao_from_to)并把一个生肖类型的字典中的键提取出来，放入[templates/entry.html](https://github.com/CherryLiChan/nfu_newmedia_python/blob/master/Zodiac-match/templates/C_entry.html)中作为生肖匹配的选择列表(见代码r_list=[k for k in r.find_shenxiao.keys()]）。
+
 > - 以下按web 请求（web request） - web 响应 时序说明
 
 > - 後端伺服器启动：执行 Zodiac_run.py 启动後端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
@@ -53,7 +63,7 @@
 
 > - 後端伺服器web 响应：Zodiac_run.py 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版templates/C_entry.html及一个含指标代码及名称的字典（见代码entry_shenxiao_list=r_list ）产出的产生《欢迎来到欢迎来到一C组生肖匹配屋！》的HTML页面
 
-> - 前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 select元素 变数名称(name) 为"text"，变数名称(name)为'shengxiao1'，'shengxiao2'使用了HTML5的select元素,详见HTML模版templates/C_entry.html
+> - 前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 select表单元素 变数名称(name) 为"text"，变数名称(name)为'shengxiao1'，'shengxiao2'使用了HTML的select表单元素,详见HTML模版templates/C_entry.html
 
 > - 前端浏览器web 请求：用户选取指标後按了提交钮「开始匹配！」，则产生新的web 请求，按照form元素中定义的method='POST' action='/search4'，以POST为方法，动作为/search4'的web 请求
 
