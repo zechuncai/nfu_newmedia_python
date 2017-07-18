@@ -51,7 +51,7 @@ Web App动作描述
 
 
 
-後端伺服器启动：执行 pick_a_zb_meta.py 启动後端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+後端伺服器启动：执行 run.py 启动後端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 
 前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
