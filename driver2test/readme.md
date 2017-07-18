@@ -13,7 +13,7 @@
 
 
 
-选择的是科目(select name = subject)选单和类别(select name = model)选单，交互页面使用到HTML之body标签。详情请看templates/index.html模板。
+选择的是科目(select name = subject)选单和类别(select name = model)选单，将选择用户的考试科目和驾照类别。交互页面使用到HTML之body标签。详情请看templates/index.html模板。
 
 
 输出：
