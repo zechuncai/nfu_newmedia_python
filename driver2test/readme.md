@@ -1,4 +1,4 @@
-driver2test
+(https://docs.python.org/2/library/json.html)driver2test
 
 英文项目名称driver2test
 
@@ -27,7 +27,9 @@ driver2test
 模块
 
 
-requests，json，render_requests
+requests(http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
+json(https://docs.python.org/2/library/json.html)
+render_requests
 
 
 数据
