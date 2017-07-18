@@ -60,34 +60,31 @@ API请求参数：subject=++++&model=++++&testType=rand&=&key=d42c15b8e42d747c71
 
 
 
-後端伺服器启动：执行 run.py 启动後端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-
-
-前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
+1.後端伺服器启动：执行 run.py 启动後端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
 
 
 
-後端伺服器web 响应：[views.py](views.py) 中 执行 了@app.route('/') 下的 index()函数，以HTML模版[templates/results.html](templates/results.html)产出的产生《welcome to test for driver!》的HTML页面
+2.後端伺服器web 响应：[views.py](views.py) 中 执行 了@app.route('/') 下的 index()函数，以HTML模版[templates/results.html](templates/results.html)产出的产生《welcome to test for driver!》的HTML页面
 
 
 
-前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"select"，变数名称(name)为'subject'，input 类型(type) 为"select"，变数名称(name)为'model'的两个下拉选单，详见HTML模版[templates/index.html](templates/index.html)
+3.前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"select"，变数名称(name)为'subject'，input 类型(type) 为"select"，变数名称(name)为'model'的两个下拉选单，详见HTML模版[templates/index.html](templates/index.html)
 
 
 
-前端浏览器web 请求：用户选取指标後按了提交钮「开始做题」，则产生新的web 请求，按照form元素中定义的method='POST' action='/results'，以POST为方法，动作为/results的web 请求
+4.前端浏览器web 请求：用户选取指标後按了提交钮「开始做题」，则产生新的web 请求，按照form元素中定义的method='POST' action='/results'，以POST为方法，动作为/results的web 请求
 
 
 
-後端服务器收到用户web 请求，匹配到@app.route('/results', methods=['POST'])的函数 index()
+5.後端服务器收到用户web 请求，匹配到@app.route('/results', methods=['POST'])的函数 index()
 
 
 
-[views.py](views.py) 中 index() 函数，把用户提交的数据，以flask 模块request.form['subject'],request.form['model']取到Web 请求中，结合并整理后发送请求给聚合数据的api街口，返回一个含有题库的大数据，对大数据进行一定的处理后，提取出题目，图形，选项，答案和解释。再使用flask模块render_template 函数以[templates/results.html](templates/results.html)模版为基础（输出），其中模版中对应的的数据来自从大数据中提取出的变数pho，qqq，i1，i2，i3，i4，eee，gg等等
+6.[views.py](views.py) 中 index() 函数，把用户提交的数据，以flask 模块request.form['subject'],request.form['model']取到Web 请求中，结合并整理后发送请求给聚合数据的api街口，返回一个含有题库的大数据，对大数据进行一定的处理后，提取出题目，图形，选项，答案和解释。再使用flask模块render_template 函数以[templates/results.html](templates/results.html)模版为基础（输出），其中模版中对应的的数据来自从大数据中提取出的变数pho，qqq，i1，i2，i3，i4，eee，gg等等
 
 
 
-前端浏览器收到web 响应：模版中[templates/results.html](templates/results.html) 的变数值正确的产生的话，前端浏览器会收到正确响应，看到题目的相关数据。
+7.前端浏览器收到web 响应：模版中[templates/results.html](templates/results.html) 的变数值正确的产生的话，前端浏览器会收到正确响应，看到题目的相关数据。
 
 
 
