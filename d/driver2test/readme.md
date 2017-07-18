@@ -22,11 +22,11 @@ driver2test
 * [json](https://docs.python.org/2/library/json.html)
 
 ### 数据
-* 数据来源为在发送请求到聚合数据平台里的[驾照题库](https://www.juhe.cn/docs/api/id/183)API后返回的一组大字典数据；数据包含了题目，题目图，选项，答案和解析。
+数据来源为在发送请求到聚合数据平台里的[驾照题库](https://www.juhe.cn/docs/api/id/183)API后返回的一组大字典数据；数据包含了题目，题目图，选项，答案和解析。
 
 
 ### API
-* 聚合数据平台里的[驾照题库](https://www.juhe.cn/docs/api/id/183)。
+聚合数据平台里的[驾照题库](https://www.juhe.cn/docs/api/id/183)。
 此API需要发送的请求参数为subject（确定考试科目类型（科目一，科目四）），model（确定驾照类型（a1，a2，b1，b2，c1，c2））和测试类型（rand：随机测试（随机100个题目），order：顺序测试（所选科目全部题目）），在专题中测试类型默认为rand：随机测试。发送请求后将返回请求情况（判断请求是否成功）和一组组含有题目，题目图url，选项，答案和解析的字典组。API请求地址：http://v.juhe.cn/jztk/query
 API请求参数：subject=++++&model=++++&testType=rand&=&key=d42c15b8e42d747c712fd15aa1509f13
 请求方式：GET
