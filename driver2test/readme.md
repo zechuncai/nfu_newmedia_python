@@ -12,6 +12,7 @@
 输入：
 
 
+
 选择的是科目(select name = subject)选单和类别(select name = model)选单，交互页面使用到HTML之body标签。详情请看templates/index.html模板。
 
 
@@ -22,6 +23,7 @@
 
 
 从输入到输出，除了flask模块，本组作品还使用了：
+
 
 
 模块
@@ -41,8 +43,9 @@ render_requests
 API
 
 
-聚合数据平台驾照题库。此API需要发送的请求参数为subject（确定考试科目类型（科目一，科目四）），model（确定驾照类型（a1，a2，b1，b2，c1，c2））和测试类型（rand：随机测试（随机100个题目），order：顺序测试（所选科目全部题目）），在专题中测试类型默认为rand：随机测试。发送请求后将返回请求情况（判断请求是否成功）和一组组含有题目，题目图url，选项，答案和解析的字典组。请求地址：http://v.juhe.cn/jztk/query
-请求参数：subject=++++&model=++++&testType=rand&=&key=d42c15b8e42d747c712fd15aa1509f13
+聚合数据平台驾照题库。
+此API需要发送的请求参数为subject（确定考试科目类型（科目一，科目四）），model（确定驾照类型（a1，a2，b1，b2，c1，c2））和测试类型（rand：随机测试（随机100个题目），order：顺序测试（所选科目全部题目）），在专题中测试类型默认为rand：随机测试。发送请求后将返回请求情况（判断请求是否成功）和一组组含有题目，题目图url，选项，答案和解析的字典组。API请求地址：http://v.juhe.cn/jztk/query
+API请求参数：subject=++++&model=++++&testType=rand&=&key=d42c15b8e42d747c712fd15aa1509f13
 请求方式：GET
 
 
@@ -87,7 +90,6 @@ views.py 中 index() 函数，把用户提交的数据，以flask 模块request.
 
 
 作者成员：
-
 
 
 见team/team.tsv
