@@ -55,7 +55,7 @@
 
 2. 在[shengxiao.py](shengxiao.py)定义两个类shengxiao1 ()和shengxiao2 (),读取[shengxiao_data.tsv](data/shengxiao_data.tsv)这个数据档，并分别把数据返回一个生肖匹配信息的字典，建立以中文名称的生肖为键，相对应的生肖匹配信息为值的字典self.find_shenxiao(见代码self.find_shenxiao = {d['shenxiao_from']:d['shenxiao_to'] for d in list_dict_shenxiao}
 
-3. 在[shengxiao.py](shengxiao.py)中导入一个读取data文件夹中生肖类型的类[shengxiao_data.py](data/shengxiao_data.py)使用自定义函数读取生肖类型的字典(见代码shenxiao_from_to)并把一个生肖类型的字典中的键提取出来，放入[templates/C_entry.html](templates/C_entry.html)中作为生肖匹配的选择列表(见代码r_list=[k for k in r.find_shenxiao.keys()]）。
+3. 在[shengxiao.py](shengxiao.py)中导入一个读取data文件夹中生肖类型的类shengxiao_data.py使用自定义函数读取生肖类型的字典(见代码shenxiao_from_to)并把一个生肖类型的字典中的键提取出来，放入[templates/C_entry.html](templates/C_entry.html)中作为生肖匹配的选择列表(见代码r_list=[k for k in r.find_shenxiao.keys()]）。
 
 
 * 以下按web 请求（web request） - web 响应 时序说明
