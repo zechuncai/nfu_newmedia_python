@@ -29,6 +29,7 @@
 ### 输出：
 * 两个测试者的生肖
 * 两个生肖的男女交叉匹配资料：是否配对及相关评价信息
+* 从后台读取数据：使用HTML的{{...}}，将其中的{{...}}替换成对应的php语句<?php .... ?>，{{...}}中的对象和变量也就替换成php中定义的对象和变量了。
 * 详情见[templates/C_results.html ](templates/C_results.html)
 
 
@@ -44,8 +45,8 @@
 * [flask](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386832805619b3e68a9cf16c4d0398d8af8f6d50e740000)</br>
 
 ### API
- 来源： [DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)
-
+* 来源： [DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)
+* 从[DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)平台中获取生肖配对的API接口和秘钥key，然后在[Zodiac_run.py](Zodiac_run.py) 中抓取网站，链接API接口，运用API。
 
 ## Web APP动作描述：
 
