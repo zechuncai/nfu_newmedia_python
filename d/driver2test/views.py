@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request
-from driver2test import app
+app = Flask(__name__)
 import requests
 import json
 
@@ -71,5 +71,6 @@ def result() -> 'html':
                             the_aaa=aaa, 
                             the_eee=eee
                       )
-
+if __name__ == '__main__':
+    app.run(debug=True)
 
