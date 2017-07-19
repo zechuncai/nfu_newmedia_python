@@ -36,7 +36,7 @@
 ## 从输入到输出，本组作品使用了：
 
 ### 数据
- 由于api无匹配者的生肖资料档，所以手动生成生肖类型的[tsv档](data/shengxiao_data.tsv)，在文件中读入，并做成字典读出相对应的内容。
+ 由于API无匹配者的生肖资料档，所以手动生成生肖类型的[tsv档](data/shengxiao_data.tsv)，在文件中读入，并做成字典读出相对应的内容。
 
 ### 模块
 * [json](http://www.json.org/json-zh.html)</br>
@@ -46,7 +46,7 @@
 
 ### API
 * 来源： [DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)
-* 从[DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)平台中获取生肖配对的API接口和秘钥key，然后在[Zodiac_run.py](Zodiac_run.py) 中抓取网站，链接API接口，运用API。
+* 从[DT阿凡达数据](http://avatardata.cn/Docs/Api/08803b8c-6ce0-4dd0-9809-361a06f25c99)平台中获取生肖配对的API接口和秘钥key及相关资料，然后在[Zodiac_run.py](Zodiac_run.py) 中抓取网站、调用API。
 
 ## Web APP动作描述：
 
