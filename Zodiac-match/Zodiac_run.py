@@ -1,4 +1,5 @@
  # -*- coding: utf-8 -*- 
+
 from flask import Flask, render_template, request
 import requests
 
@@ -40,7 +41,7 @@ def do_search() -> 'html':
 def entry_page() -> 'html':
     """Display this webapp's HTML form."""
     return render_template('C_entry.html',
-			entry_shenxiao_list=r_list,
+							entry_shenxiao_list=r_list,
                            the_title='欢迎来到一C组生肖匹配屋！')
 
 
