@@ -1,7 +1,7 @@
-driver2test
+ driver2test
 
 英文项目名称driver2test，driver意思为："司机"，在这里是指（司机、驾考者）驾照类型；2在英语中念"two",同音"to";test意思为"测试"
-“考验”，为了取得驾照而需要做的题目，都是会在驾照考试中经常能够碰到的题目，本项目就是方便驾照考测试者进行日常的试题训练。
+“考验”，“考查”。为了取得驾照而需要做的题目，都是会在驾照考试中经常能够碰到的题目，本项目就是方便驾照考测试者进行日常的试题训练。
 
 
 # 简介:
@@ -9,7 +9,7 @@ driver2test
 
 
 ## 输入：
-用户选择考试科目和驾照类别，科目(select name = subject)选单和类别(select name = model)选单，交互界面使用到[HTML之select 表单元素](http://www.w3school.com.cn/tags/tag_select.asp)。详情请看[templates/index.html](templates/index.html)。
+用户选择考试科目和驾照类别，科目(select name = subject)选单和类别(select name = model)选单，交互界面使用到[HTML之select 表单元素](http://www.w3school.com.cn/tags/tag_select.asp)。详情请看[templates/index.html](templates/index.html)。 
 
 
 ## 输出：
