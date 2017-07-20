@@ -57,8 +57,37 @@ def result() -> 'html':
         
     
     aaa = change[gg]
+    
         
-        
+    _text_ = '''
+     大型客车 A1 可以开 大型载客汽车 和B1,B2,C1,C2,C3,C4,M 车型
+     牵引车 A2 可以开 重型、中型全挂、半挂汽车列车 和B1,B2,C1,C2,C3,C4 ,M 车型
+     城市公交车 A3 可以开 核载10人以上的城市公共汽车和C1,C2,C3,C4 车型
+     中型客车 B1 可以开 中型载客汽车(含核载10人以上、19人以下的城市公共汽车)和 C1、C2、C3、C4、M 车型
+     大型货车 B2 可以开 重型、中型载货汽车和C1,C2,C3,C4 车型
+     小型汽车 C1 可以开 小型 、微型载客汽车和C2,C3,C4 车型
+     小型自动挡汽车 C2 可以开 小型、微型自动挡载客汽车以及轻型、微型自动挡载货汽车
+     低速载货汽车 C3 可以开 低速载货汽车(原四轮农用运输车) 和C4车型
+     三轮汽车 C4 可以开 三轮汽车(原三轮农用运输车)
+     '''
+
+    lines = [x.strip() for x in _text_.splitlines() if x.strip()!='']
+    items = [x.split(' ') for x in lines]
+    code_2_name = { i[1]:i[0] for i in items }
+    code_2_description = { i[1]:"".join(i[2:]) for i in items }
+    code_2_api_code = {'a1': 'A1',
+                 'a2': 'A2',
+                 'b1': 'B1',
+                 'b2': 'B2',
+                 'c1': 'C1',
+                 'c2': 'C2'}
+    
+    mmodel = code_2_api_code[stepB]
+    mmodel_name = code_2_name[mmodel]
+    mmodel_description = code_2_description[mmodel]
+    
+    
+    
         
         
     return render_template('result.html',
@@ -69,7 +98,9 @@ def result() -> 'html':
                             the_i3=i3,
                             the_i4=i4,
                             the_aaa=aaa, 
-                            the_eee=eee
+                            the_eee=eee,
+                            the_mmodel_name=mmodel_name,
+                            the_mmodel_description=mmodel_description
                       )
 if __name__ == '__main__':
     app.run(debug=True)
