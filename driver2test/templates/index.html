@@ -8,10 +8,13 @@
 <form method='POST' action='/results'>
 
 请选择考试科目类型：
+<input name='subject' list='subject' />     
+<datalist id="subject">
 <select name="subject">
 <option value="1">科目一</option>
 <option value="4">科目四</option>
 </select>
+</datalist>
 <br>
 <br>
 驾照类型：
