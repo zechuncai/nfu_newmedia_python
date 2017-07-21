@@ -4,7 +4,7 @@ driver2test
 
 
 # 简介:
-运行本app，输入方面用户可以选择考试科目类型和驾照类型，两个输入皆为下拉选单；输出方面则是输出你所选择的考试科目类型和驾照类型对应匹配的科目考题、题目、图片、选项、答案以及解释；数据来源：题目中的所有内容来自聚合数据平台里的[驾照题库](https://www.juhe.cn/docs/api/id/183)。
+运行本app，输入方面用户可以选择考试科目类型和驾照类型，两个输入前者为下拉选单，后者为datalist输入框；输出方面则是输出你所选择的考试科目类型和驾照类型对应匹配的科目考题、题目、图片、选项、答案以及解释,并有一个对用户所选的驾照类型进行简单的介绍；数据来源：题目中的所有内容来自聚合数据平台里的[驾照题库](https://www.juhe.cn/docs/api/id/183)。
 
 
 ## 输入：
@@ -12,7 +12,7 @@ driver2test
 
 
 ## 输出：
-用户得到输出结果为：题目及图片、选项、答案解释。见[templates/results.html](templates/results.html)模板中body标签所包含的数据。
+用户得到输出结果为：题目及图片、选项、答案解释及有对用户所选的驾照类型进行简单的介绍。见[templates/results.html](templates/results.html)模板中body标签所包含的数据。
 
 
 ## 从输入到输出，除了flask模块，本组作品还使用了：
@@ -49,7 +49,7 @@ driver2test
 
 
 
-3.前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"select"，变数名称(name)为'subject'，input 类型(type) 为"select"，变数名称(name)为'model'的两个下拉选单，详见HTML模版[templates/index.html](templates/index.html)
+3.前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"select"，变数名称(name)为'subject'的下拉选单，input 类型(type) 为"text"，变数名称(name)为'model'，id为'model'的datalist输入文本框，详见HTML模版[templates/index.html](templates/index.html)
 
 
 
@@ -61,7 +61,7 @@ driver2test
 
 
 
-6.[views.py](views.py) 中 index() 函数，把用户提交的数据，以flask 模块request.form['subject'],request.form['model']取到Web 请求中，结合并整理后发送请求给聚合数据的api接口，返回一个含有题库的大数据，对大数据进行一定的处理后，提取出题目，图形，选项，答案和解释。再使用flask模块render_template 函数以[templates/results.html](templates/results.html)模版为基础（输出），其中模版中对应的的数据来自从大数据中提取出的变数pho，qqq，i1，i2，i3，i4，eee，gg等等
+6.[views.py](views.py) 中 index() 函数，把用户提交的数据，以flask 模块request.form['subject'],request.form['model']取到Web 请求中，结合并整理后发送请求给聚合数据的api接口，返回一个含有题库的大数据，对大数据进行一定的处理后，提取出题目，图形，选项，答案和解释，并且根据用户所选的驾照类型，给出所对应的驾照类型的相关介绍。再使用flask模块render_template 函数以[templates/results.html](templates/results.html)模版为基础（输出），其中模版中对应的的数据来自从大数据中提取出的变数pho，qqq，i1，i2，i3，i4，eee，gg等等
 
 
 
